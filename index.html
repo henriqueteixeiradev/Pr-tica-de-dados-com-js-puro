@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Dados</title>
+    <style>
+      body {
+        font-size: 1.25rem;
+        font-family: sans-serif;
+        margin: 2rem;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        text-align: left;
+      }
+
+      table td,
+      table th {
+        padding: 0.5rem 1rem;
+      }
+
+      table tr:nth-child(even) {
+        background-color: ghostwhite;
+      }
+
+      h2,
+      p {
+        margin-left: 1rem;
+      }
+
+      h2 {
+        border-top: 6px solid ghostwhite;
+        padding-top: 1rem;
+      }
+
+      div {
+        border-top: 3px solid ghostwhite;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Estatíticas</h2>
+    <p id="total">Total: <span></span></p>
+
+    <div id="pagamento"></div>
+
+    <div id="status"></div>
+
+    <h2>Dados</h2>
+
+    <table id="transacoes">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Compra</th>
+          <th>Pagamento</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script type="module" src="./dist/script.js"></script>
+  </body>
+</html>
