@@ -41,6 +41,13 @@ function preencherEstatisticas(transacoes: Transacao[]): void {
   // Inserção dos status no html
   preencherLista(data.status, "#status");
   // ------------
+
+  // Inserção dos dias da semana no html
+  const diaElement = document.querySelector("#dia span");
+
+  if (!diaElement) return;
+
+  diaElement.textContent = data.melhorDia[0];
 }
 
 function preencherTabela(transacoes: Transacao[]): void {
